@@ -1,0 +1,64 @@
+.container {
+  border: 1px solid red;
+  width: 280px;
+}
+
+.body, .footer {
+  width: 100%;
+}
+
+.body {
+  height: 424px;
+  border-bottom: 1px solid blue;
+}
+
+.footer {
+  height: 176px;
+  background-color: goldenrod;
+}
+
+.transStart {
+  transform-origin: top right;
+  animation: ticket-torn-left 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.transEnd {
+  transform-origin: top left;
+  animation: ticket-torn-right 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ticket-torn-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes ticket-torn-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes ticket-torn {
+  0% {
+    transform-origin: top right;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  51% {
+    transform-origin: 3px 15%;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
