@@ -12,14 +12,30 @@
   border-bottom: 1px solid blue;
 }
 
+.footerWrapper {
+  position: relative;
+  top: -30px;
+}
+
 .footer {
+  margin-top: 30px;
   height: 176px;
-  background-color: goldenrod;
+  /* background-color: goldenrod; */
+}
+
+.footerInner {
+  height: 176px;
+  width: 100%;
+}
+
+.backgroundImg {
+  background-position: center;
+  background-size: cover;
 }
 
 .transStart {
   transform-origin: top right;
-  animation: ticket-torn-left 1s linear;
+  animation: ticket-torn-left 1.2s linear;
   animation-fill-mode: forwards;
 }
 
@@ -27,23 +43,35 @@
   transform-origin: top left;
   animation: ticket-torn-right 1s linear;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 @keyframes ticket-torn-left {
   0% {
+    /* transform-origin: top right; */
     transform: rotate(0deg);
+    background-image: url('@/asset/stamp.png');
+  }
+  99% {
+    background-image: url('@/asset/stamp.png');
   }
   100% {
     transform: rotate(-10deg);
+    background-image: none;
   }
 }
 
 @keyframes ticket-torn-right {
   0% {
+    /* transform-origin: top left; */
     transform: rotate(0deg);
   }
+  2% {
+    background-image: url('@/asset/stamp.png');
+  }
   100% {
-    transform: rotate(10deg);
+    transform: rotate(10deg) translateX(-5px);
+    background-image: url('@/asset/stamp.png');
   }
 }
 

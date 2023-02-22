@@ -145,7 +145,7 @@ module.exports = function (webpackEnv) {
                     },
                   ],
                   ['postcss-pxtorem', {
-                      rootValue: 20,
+                      rootValue: 18,
                       propList: ['*'],
                       selectorBlackList: ['van'],
                   }],

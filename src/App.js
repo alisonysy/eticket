@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+// import logo from './logo.svg';
+// import { Counter } from './features/counter/Counter';
+import Ticket from '@/components/Ticket'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '100vh', paddingTop: '15%'}}>
+        <Ticket />
+      </div>
+      
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -50,7 +55,7 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
+      </header> */}
     </div>
   );
 }
