@@ -1,6 +1,5 @@
 .container {
-  border: 1px solid red;
-  width: 280px;
+  width: 309px;
 }
 
 .body, .footer {
@@ -8,8 +7,8 @@
 }
 
 .body {
-  height: 424px;
-  border-bottom: 1px solid blue;
+  height: 465px;
+  background-image: url('@/asset/ticket-first.png');
 }
 
 .footerWrapper {
@@ -19,12 +18,13 @@
 
 .footer {
   margin-top: 30px;
-  height: 176px;
+  height: 108px;
   /* background-color: goldenrod; */
+  background-image: url('@/asset/ticket-second.png');
 }
 
 .footerInner {
-  height: 176px;
+  height: 108px;
   width: 100%;
 }
 
@@ -50,10 +50,10 @@
   0% {
     /* transform-origin: top right; */
     transform: rotate(0deg);
-    background-image: url('@/asset/stamp.png');
+    background-image: url('@/asset/ticket-second.png');
   }
   99% {
-    background-image: url('@/asset/stamp.png');
+    background-image: url('@/asset/ticket-second.png');
   }
   100% {
     transform: rotate(-10deg);
@@ -67,11 +67,12 @@
     transform: rotate(0deg);
   }
   2% {
-    background-image: url('@/asset/stamp.png');
+    background-image: url('@/asset/ticket-second.png');
   }
   100% {
     transform: rotate(10deg) translateX(-5px);
-    background-image: url('@/asset/stamp.png');
+    background-image: url('@/asset/ticket-second.png');
+    opacity: 0.3;
   }
 }
 

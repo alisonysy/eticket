@@ -1,16 +1,11 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import { Counter } from './features/counter/Counter';
-import Ticket from '@/components/Ticket'
+import Ticket from '@/pages/Ticket'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '100vh', paddingTop: '15%'}}>
-        <Ticket />
-      </div>
-      
+      <Ticket />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />

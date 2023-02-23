@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import styles from "./index.module.css";
+// import TicketFirstImg from '@/asset/ticket-first.png'
 
 export default function Ticket() {
   const [startAnim, setStartAnim] = useState(false);
@@ -48,7 +49,9 @@ export default function Ticket() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.body}></div>
+      <div className={`${styles.body} ${styles.backgroundImg}`}>
+        {/* <img src={TicketFirstImg} /> */}
+      </div>
       <div className={styles.footerWrapper}>
         <div
           className={`${styles.footer} ${startAnim ? styles.transStart : ""} ${
